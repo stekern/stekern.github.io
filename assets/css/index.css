@@ -1,42 +1,37 @@
-/*
- * index.css
- * Copyright (C) 2016 Erlend
- *
- * Distributed under terms of the MIT license.
- */
-
-body {
+html, body {
   background-image: url('../img/background.png');
+  height: 100%;
 }
 
 #container {
   color: black;
-  display: block;
-  overflow: hidden;
-  margin-top: 5%;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
-  width: 50%;
+  font-size: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 #content {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
   background: lightgrey;
   border: solid;
   border-radius: 5%;
   border-color: black;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  margin-top: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   padding-left: 1%;
   padding-right: 1%;
 }
 
-#content h2 {
+#content h1 {
   font-family: 'Pacifico', cursive;
-  font-size: 50px;
+  font-size: 300%;
   border-bottom: dashed;
   padding-bottom: 3%;
-  margin: 0;
+  margin: auto;
 }
 
 #content p {
@@ -45,7 +40,7 @@ body {
   padding-right: 1%;
   margin: 0;
   padding-top: 3%;
-  padding-bottom: 12%;
+  padding-bottom: 9%;
 }
 
 #content img {
@@ -63,12 +58,18 @@ body {
   text-decoration: none;
 }
 
+#footer {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #footer p {
   padding-left: 1%;
   padding-right: 1%;
   font-family: arial;
-  font-size: 12px;
   font-style: italic;
+  font-size: 75%;
 }
 
 a {
@@ -78,3 +79,19 @@ a {
 a:hover {
   color: darkblue;
 }
+
+@media only screen and (max-width: 480px) {
+  #content {
+    width: 90%;
+    border-radius: 3%;
+  }
+
+  #content img {
+    width: 50%;
+  }
+
+  #footer {
+    width: 90%;
+  }
+}
+
