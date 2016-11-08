@@ -45,9 +45,7 @@ html, body {
 #content img {
   width: 30%;
   height: auto;
-  background: black;
-  border: dashed;
-  border-width: 10%;
+  box-shadow: 7px 7px 5px #888888;
   border-radius: 50%;
 }
 
